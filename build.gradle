@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation platform('software.amazon.awssdk:bom:2.14.7')
+    implementation 'software.amazon.awssdk:s3'
+    implementation 'software.amazon.awssdk:iam'
+    implementation 'software.amazon.awssdk:sts'
+
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
