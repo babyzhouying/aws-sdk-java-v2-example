@@ -28,3 +28,6 @@ hs_err_pid*
 #mac_os
 *.DS_Store
 *.swp
+
+#idea
+.idea
